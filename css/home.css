@@ -1,0 +1,554 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .nav-link {
+  color: #000 !important;
+}
+
+.navbar.scrolled .fa {
+  color: #000 !important;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar .fa {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled .navbar-brand img.light {
+  display: none;
+}
+
+.navbar.scrolled .navbar-brand img.dark {
+  display: inline; /* or your intended style */
+}
+
+.navbar.scrolled .fa-facebook-f,
+.navbar.scrolled .fa-twitter,
+.navbar.scrolled .fa-instagram {
+  color: #000 !important;
+}
+
+.logos {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  min-height: 2rem;
+}
+
+#Home {
+  background-image: linear-gradient(
+      rgba(31, 26, 26, 0.5),
+      rgba(31, 26, 26, 0.5)
+    ),
+    url(../image/bg-image-28.webp);
+  height: 100vh;
+  background-size: cover;
+}
+
+.part2 #Home {
+  background-image: linear-gradient(
+      rgba(31, 26, 26, 0.5),
+      rgba(31, 26, 26, 0.5)
+    ),
+    url(../image/bg-image-29.webp);
+  height: 100vh;
+  background-size: cover;
+}
+
+#Home h1 {
+  font-size: 6.25rem;
+  font-weight: 700;
+  font-display: swap;
+}
+
+#Home h4 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+#Home .buttons .more {
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#Home .buttons .contact {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.header .carousel-control-prev,
+.header .carousel-control-next {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  padding: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.header button .layer {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+}
+.header .carousel-control-prev:hover .layer,
+.header .carousel-control-next:hover .layer {
+  transform: translateX(50px);
+}
+.header .carousel-control-prev {
+  top: 45%;
+}
+
+.header .carousel-control-next {
+  top: 50%;
+}
+
+#About h6 {
+  color: #1f1f1f;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+#About p {
+  color: #787878;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+#About p span.animation::after {
+  content: "|";
+  animation-name: words;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  color: #00c3da;
+}
+
+@keyframes words {
+  0% {
+    content: "|";
+  }
+  2.22% {
+    content: "a|";
+  }
+  4.44% {
+    content: "ap|";
+  }
+  6.66% {
+    content: "app|";
+  }
+  8.88% {
+    content: "apps|";
+  }
+  11.11% {
+    content: "app|";
+  }
+  13.33% {
+    content: "ap|";
+  }
+  15.55% {
+    content: "a|";
+  }
+  17.77% {
+    content: "|";
+  }
+
+  19.99% {
+    content: "s|";
+  }
+  22.21% {
+    content: "so|";
+  }
+  24.43% {
+    content: "sof|";
+  }
+  26.65% {
+    content: "soft|";
+  }
+  28.87% {
+    content: "softw|";
+  }
+  31.09% {
+    content: "softwa|";
+  }
+  33.31% {
+    content: "softwar|";
+  }
+  35.53% {
+    content: "software|";
+  }
+  37.75% {
+    content: "softwares|";
+  }
+  39.97% {
+    content: "software|";
+  }
+  42.19% {
+    content: "softwar|";
+  }
+  44.41% {
+    content: "softwa|";
+  }
+  46.63% {
+    content: "softw|";
+  }
+  48.85% {
+    content: "soft|";
+  }
+  51.07% {
+    content: "sof|";
+  }
+  53.29% {
+    content: "so|";
+  }
+  55.51% {
+    content: "s|";
+  }
+  57.73% {
+    content: "|";
+  }
+
+  59.95% {
+    content: "w|";
+  }
+  62.17% {
+    content: "we|";
+  }
+  64.39% {
+    content: "web|";
+  }
+  66.61% {
+    content: "webs|";
+  }
+  68.83% {
+    content: "websi|";
+  }
+  71.05% {
+    content: "websit|";
+  }
+  73.27% {
+    content: "website|";
+  }
+  75.49% {
+    content: "website|";
+  }
+  77.71% {
+    content: "websites|";
+  }
+  79.93% {
+    content: "website|";
+  }
+  82.15% {
+    content: "websit|";
+  }
+  84.37% {
+    content: "websi|";
+  }
+  86.59% {
+    content: "webs|";
+  }
+  88.81% {
+    content: "web|";
+  }
+  91.03% {
+    content: "we|";
+  }
+  93.25% {
+    content: "we|";
+  }
+  95.47% {
+    content: "w|";
+  }
+  97.69% {
+    content: "|";
+  }
+}
+
+#About button {
+  font-size: 0.6857rem;
+  font-weight: 500;
+}
+
+#About button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#Team h2 {
+  color: #1f1f1f;
+  font-size: 2.375rem;
+  font-weight: 700;
+  position: relative;
+}
+.team-text h2::before {
+  content: attr(data-bigletter);
+  position: absolute;
+  top: 0;
+  left: 47%;
+  z-index: -1;
+  font-size: 80px;
+  font-weight: bold;
+  color: gray;
+  opacity: 0.2;
+  transform: translateY(-45%);
+}
+
+#Team .team-text h4 {
+  color: #787878;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+#Team .card-item .layer {
+  background-color: rgba(0, 195, 218, 0.9);
+  transform: translateY(100%);
+  transition: transform 0.5s;
+}
+
+#Team .card-item .layer li i {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#Team .card-item .layer h4 {
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+#Team .card-item .layer span {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+#Team .card-item:hover .layer {
+  transform: translateY(0);
+}
+
+#Services {
+  background-color: #626262;
+}
+
+#Services .text h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#Services .We-Do-list ul li {
+  font-weight: 400;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+#Services .We-Do-list ul li i {
+  font-size: 1.1rem;
+}
+
+#Services .text-bottom .We-Do h2 {
+  font-size: 2.375rem;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.We-Do h2::before {
+  content: attr(data-bigletter);
+  position: absolute;
+  top: 15%;
+  left: -1rem;
+  z-index: -1;
+  font-size: 80px;
+  font-weight: bold;
+  color: rgba(121, 117, 117, 0.699);
+  transform: translateY(-50%);
+}
+
+#Works {
+  background-color: #f7f7f7;
+}
+
+#Works h2 {
+  color: #1f1f1f;
+  font-size: 2.375rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.works-text h2::before {
+  content: attr(data-bigletter);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 1;
+  font-size: 80px;
+  font-weight: bold;
+  color: gray;
+  opacity: 0.2;
+  transform: translate(-50%, -50%);
+}
+
+#Works .works-text h4 {
+  color: #787878;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+#Works .card-item {
+  background-color: #ffffff;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+#Works .card-item h4 {
+  color: #1f1f1f;
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+
+#Works .card-item h2 span {
+  color: #1f1f1f;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: absolute;
+  left: 30px;
+}
+
+#Works .card-item h2 {
+  font-size: 3.49rem;
+  font-weight: 500;
+  padding-left: 35px;
+}
+
+#Works .card-item ul li span {
+  font-weight: 400;
+  color: #787878;
+  font-family: "Source Sans 3", sans-serif;
+}
+#Works .card-item button {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+#Works .third-card h2 {
+  color: #00c3da;
+}
+
+#Works .third-card h2 span {
+  color: #00c3da;
+}
+
+#Works .third-card .badge {
+  font-size: 0.5625rem;
+  font-weight: 500;
+}
+#Works .third-card {
+  transform: scale(1.1);
+}
+
+#pricing h6 {
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+#pricing {
+  background-color: #f7f7f7;
+}
+
+#pricing .my-photo img {
+  width: 100px;
+  height: 100px;
+  transform: translateY(50%);
+}
+
+#pricing h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#pricing span {
+  color: #787878;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+#pricing p {
+  color: #787878;
+  font-size: 1.125rem;
+  font-weight: 300;
+  font-family: Source Sans 3, sans-serif;
+}
+#pricing .arrow {
+  font-size: 1.6rem;
+}
+#pricing .carousel-indicators {
+  position: absolute;
+  bottom: -3.125rem;
+  left: 1.0625rem;
+}
+
+#pricing .carousel-indicators [data-bs-target] {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #00c3da;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+#pricing .carousel-indicators .active {
+  background-color: #dedede;
+}
+
+#Contact .text-contact h2 {
+  color: #1f1f1f;
+  font-size: 2.375rem;
+  font-weight: 700;
+  position: relative;
+}
+#Contact .text-contact h2::before {
+  content: attr(data-bigletter);
+  position: absolute;
+  top: 55%;
+  left: 0;
+  z-index: -1;
+  font-size: 80px;
+  font-weight: bold;
+  color: gray;
+  opacity: 0.1;
+  transform: translateY(-45%);
+}
+
+#Contact .text-contact h4 {
+  color: #787878;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: "Source Sans 3", sans-serif;
+}

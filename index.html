@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="our bezel website " />
+    <title>bootstrap Exam bezel</title>
+
+    
+    <!-- ==============link font family ================= -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!-- ==============link font awsome ================= -->
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- ==============link bootstrap css================= -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- ==============link Css================= -->
+    <link rel="stylesheet" href="css/home.css" media="print" onload="this.media='all'"/>
+    
+  </head>
+  <body>
+    <!-- ==============navbar================= -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top shadow-sm border-bottom border-1 border-white border-opacity-25 py-3"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img class="w-50 h-50 light" src="image/logo-light.png" loading="lazy" alt="page logo" />
+          <img
+            class="w-50 h-50 dark"
+            src="image/logo-dark.png"
+            alt="page logo"
+            loading="lazy"
+            style="display: none"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler w-100 h-100"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item px-1">
+              <a class="nav-link text-white" href="#Home">Home</a>
+            </li>
+
+            <li class="nav-item px-1">
+              <a class="nav-link text-white" href="#About">About</a>
+            </li>
+
+            <li class="nav-item px-1">
+              <a class="nav-link text-white" href="#Team">Team</a>
+            </li>
+
+            <li class="nav-item px-1">
+              <a class="nav-link text-white" href="#Services">Services</a>
+            </li>
+
+            <li class="nav-item px-1">
+              <a class="nav-link text-white" href="#Works">Works</a>
+            </li>
+
+            <li class="nav-item px-1">
+              <a class="nav-link text-white" href="#Pricing">Pricing</a>
+            </li>
+
+            <li class="nav-item px-1">
+              <a class="nav-link text-white" href="#Contact">Contact</a>
+            </li>
+          </ul>
+          <div class="logos">
+            <ul class="d-flex gap-4 pt-2">
+              <i class="fa-brands fa-facebook-f text-white"></i>
+              <i class="fa-brands fa-twitter text-white"></i>
+              <i class="fa-brands fa-instagram text-white"></i>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==============header================= -->
+     <div class="header">
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <header id="Home">
+            <div
+              class="header-content d-flex justify-content-center align-items-center flex-column h-100 text-white text-center"
+            >
+              <h1>Get Awesome.</h1>
+              <h4>We are an innovative company making digital stuff.</h4>
+              <div class="buttons">
+                <button
+                  type="button"
+                  class="btn btn-info rounded-1 mt-3 mx-3 py-3 px-4 text-white more"
+                >
+                  Read More
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-light py-3 px-4 rounded-1 mt-3 contact"
+                >
+                  Contact
+                </button>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="carousel-item">
+          <div class="part2">
+            <header id="Home">
+              <div
+                class="header-content d-flex justify-content-center align-items-center flex-column h-100 text-white text-center"
+              >
+                <h1>Create With Bezel.</h1>
+                <h4>We help ambitious companies create new value.</h4>
+                <div class="buttons">
+                  <button
+                    type="button"
+                    class="btn btn-info rounded-1 mt-3 mx-3 py-3 px-4 text-white more"
+                  >
+                    Hire us
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-light py-3 px-4 rounded-1 mt-3 contact"
+                  >
+                    Services
+                  </button>
+                </div>
+              </div>
+            </header>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          <span class="visually-hidden">Previous</span>
+          <div class="layer"></div>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <i class="fa-solid fa-arrow-right arrow-right" aria-hidden="true"></i>
+          <span class="visually-hidden">Next</span>
+          <div class="layer"></div>
+        </button>
+      </div>
+    </div>
+    </div>
+
+    <!-- ==============About section================= -->
+    <section id="About" class="pt-5 pb-5 border-bottom border-opacity-10">
+      <div class="container">
+        <div class="About-text text-center pt-5 pb-3">
+          <h6 class="pb-3 text- text-uppercase">Who We Are</h6>
+          <p class="pb-4">
+            We are an innovative company. We develop and design
+            <span class="animation"></span> for <br />
+            costumers around the world. Our clients are some of the most
+            forward-
+            <br />
+            looking companies in the world.
+          </p>
+          <div class="pb-5">
+            <button
+              type="button"
+              class="btn p-3 px-5 rounded-0 border-dark-subtle"
+            >
+              Read More
+            </button>
+      </div>
+    </section>
+
+    <!-- ==============Team section================= -->
+    <section id="Team" class="pt-5 pb-5">
+      <div class="container">
+        <div class="team-text text-center pt-5">
+          <h2 data-bigletter="C">Creative Team</h2>
+          <h4 class="pt-2">We are digital thinkers</h4>
+        </div>
+        <div class="row cards p-lg-5 ">
+          <div class="card-item col-md-6 col-lg-3 overflow-hidden">
+            <div class="inner position-relative">
+              <img class="w-100 h-100" src="image/team-1.jpg" alt="team image" loading="lazy" />
+
+              <div
+                class="layer w-100 h-100 position-absolute top-0 start-0 d-flex flex-column justify-content-end p-4"
+              >
+                <ul
+                  class="list-unstyled d-flex position-absolute top-0 start-0 p-4 text-white gap-3"
+                >
+                  <li><i class="fa-brands fa-facebook-f"></i></li>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-linkedin-in"></i></li>
+                </ul>
+                <div class="text-start text-white">
+                  <h4>Luke Cage</h4>
+                  <span>Founder & CEO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-item col-md-6 col-lg-3 overflow-hidden">
+            <div class="inner position-relative">
+              <img class="w-100 h-100" src="image/team-2.jpg" alt="team image" />
+
+              <div
+                class="layer w-100 h-100 position-absolute top-0 start-0 d-flex flex-column justify-content-end p-4"
+              >
+                <ul
+                  class="list-unstyled d-flex position-absolute top-0 start-0 p-4 text-white gap-3"
+                >
+                  <li><i class="fa-brands fa-facebook-f"></i></li>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-linkedin-in"></i></li>
+                </ul>
+                <div class="text-start text-white">
+                  <h4>Jessica Jones</h4>
+                  <span>Product Designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-item col-md-6 col-lg-3 overflow-hidden">
+            <div class="inner position-relative">
+              <img class="w-100 h-100" src="image/team-3.jpg" alt="team image" loading="lazy" />
+
+              <div
+                class="layer w-100 h-100 position-absolute top-0 start-0 d-flex flex-column justify-content-end p-4"
+              >
+                <ul
+                  class="list-unstyled d-flex position-absolute top-0 start-0 p-4 text-white gap-3"
+                >
+                  <li><i class="fa-brands fa-facebook-f"></i></li>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-linkedin-in"></i></li>
+                </ul>
+                <div class="text-start text-white">
+                  <h4>Matt Murdock</h4>
+                  <span>Lead Developer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-item col-md-6 col-lg-3 overflow-hidden">
+            <div class="inner position-relative">
+              <img class="w-100 h-100" src="image/team-4.jpg" alt="team image" loading="lazy" />
+
+              <div
+                class="layer w-100 h-100 position-absolute top-0 start-0 d-flex flex-column justify-content-end p-4"
+              >
+                <ul
+                  class="list-unstyled d-flex position-absolute top-0 start-0 p-4 text-white gap-3"
+                >
+                  <li><i class="fa-brands fa-facebook-f"></i></li>
+                  <li><i class="fa-brands fa-twitter"></i></li>
+                  <li><i class="fa-brands fa-linkedin-in"></i></li>
+                </ul>
+                <div class="text-start text-white">
+                  <h4>Claire Temple</h4>
+                  <span>Sales Manager</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============Services section================= -->
+
+    <section id="Services" class="pt-5">
+      <div class="container">
+        <div class="text-top pt-5 g-4 text-uppercase">
+          <div class="row p-5">
+            <div class="text col-md-4 col-lg-2 text-white pb-5">
+              <h4>Stunning Design</h4>
+            </div>
+
+            <div class="text col-md-4 col-lg-2 text-white pb-5 ">
+              <h4>Time Saver</h4>
+            </div>
+
+            <div class="text col-md-4 col-lg-2 text-white pb-5">
+              <h4>Clean Code</h4>
+            </div>
+
+            <div class="text col-md-4 col-lg-2 text-white pb-5">
+              <h4>Customizable</h4>
+            </div>
+
+            <div class="text col-md-4 col-lg-2 text-white pb-5">
+              <h4>Perfect Layout</h4>
+            </div>
+
+            <div class="text col-md-4 col-lg-2 text-white pb-5">
+              <h4>Retina Ready</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-bottom">
+          <div class="row">
+            <div
+              class="We-Do col-lg-6 text-md-center text-lg-start p-5 text-white"
+            >
+              <h2 data-bigletter="W" class="pb-4">What We Do.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing<br />
+                elit. Aliquam ipsam ullam incidunt itaque nemo <br />
+                omnis temporibus totam quibusdam repellat vero,<br />
+                recusandae excepturi dignissimos velit et alias amet,<br />
+                quia facilis perferendis.
+              </p>
+            </div>
+
+            <div class="We-Do-list col-lg-6 p-5 text-white">
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li class="pb-4">
+                      <i class="fa-regular fa-circle-check px-2"></i> Research
+                    </li>
+                    <li class="pb-4">
+                      <i class="fa-regular fa-circle-check px-2"></i>
+                      Opportunity Analysis
+                    </li>
+                    <li class="pb-4">
+                      <i class="fa-regular fa-circle-check px-2"></i> Consulting
+                    </li>
+                    <li class="pb-4">
+                      <i class="fa-regular fa-circle-check px-2"></i> Brand
+                      Planning
+                    </li>
+                    <li class="pb-4">
+                      <i class="fa-regular fa-circle-check px-2"></i> Customer
+                      Support
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li class="pb-4">
+                      <i class="fa-regular fa-circle-check px-2"></i> Logo &
+                      Branding
+                    </li>
+
+                    <li class="pb-4">
+                      <i class="fa-regular fa-circle-check px-2"></i> Style
+                      guides
+                    </li>
+
+                    <li class="pb-4">
+                      <i class="fa-regular fa-circle-check px-2"></i> Motion
+                      graphics
+                    </li>
+                    <li class="pb-4">
+                      <i class="fa-regular fa-circle-check px-2"></i>
+                      UX/UI-design
+                    </li>
+                    <li class="pb-4">
+                      <i class="fa-regular fa-circle-check px-2"></i> Social
+                      media design
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============works section================= -->
+    <section id="Works" class="pt-5 pb-5">
+      <div class="container">
+        
+      <div class="works-text text-center pt-5">             
+            <h2 data-bigletter="C" class="pt-5">Cheap Prices</h2>
+            <h4 class="pt-2">We provide the best quality.</h4>
+      </div>
+
+
+            <div class="row  mt-5 g-5">
+
+              <div class="card-item col-sm-6 col-md-3 bg-body-tertiary">
+                <div class="inner   p-3 rounded-2 shadow pb-5">
+                 <h4 class="px-4 pt-5 pb-2">Starter</h4>
+            <h2 class="border-bottom pb-4"><span>$</span>9</h2>
+
+            <ul class="list-unstyled px-4 pt-4">
+              <li class="pb-3"><span>Unlimited Connections</span></li>
+              <li class="pb-3"><span>24/7 Support</span></li>
+              <li class="pb-3"><span>Full SSL Protection</span></li>
+              <li class="pb-3"><span>Unlimited Channels</span></li>
+            </ul>
+            <div class="px-4 pb-5">
+            <button type="button" class="btn btn-info text-white p-3 rounded-2">sign up</button>
+            </div>
+                   </div>
+              </div>
+
+                <div class="card-item col-sm-6 col-md-3 bg-body-tertiary">
+                <div class="inner bg-white  p-3 rounded-2 shadow pb-5">
+                 <h4 class="px-4 pt-5 pb-2">Silver</h4>
+            <h2 class="border-bottom pb-4"><span>$</span>19</h2>
+
+            <ul class="list-unstyled px-4 pt-4">
+              <li class="pb-3"><span>Unlimited Connections</span></li>
+              <li class="pb-3"><span>24/7 Support</span></li>
+              <li class="pb-3"><span>Full SSL Protection</span></li>
+              <li class="pb-3"><span>Unlimited Channels</span></li>
+            </ul>
+            <div class="px-4 pb-5">
+            <button type="button" class="btn btn-info text-white p-3 rounded-2">sign up</button>
+            </div>
+                   </div>
+              </div>
+
+                <div class="card-item col-sm-6 col-md-3 third-card bg-body-tertiary">
+                <div class="inner bg-white  p-3 rounded-2 shadow pb-5">
+                  <div class="d-flex justify-content-between align-items-center">
+                 <h4 class="px-4 pt-5 pb-2">Gold</h4>
+                 <span class="badge text-bg-info p-2  text-white rounded-5">Best Value</span>
+                 </div>
+            <h2 class="border-bottom pb-4 "><span>$</span>29</h2>
+
+            <ul class="list-unstyled px-4 pt-4">
+              <li class="pb-3"><span>Unlimited Connections</span></li>
+              <li class="pb-3"><span>24/7 Support</span></li>
+              <li class="pb-3"><span>Full SSL Protection</span></li>
+              <li class="pb-3"><span>Unlimited Channels</span></li>
+            </ul>
+            <div class="px-4 pb-5">
+            <button type="button" class="btn btn-info text-white p-3 rounded-2">sign up</button>
+            </div>
+                   </div>
+              </div>
+
+                <div class="card-item col-sm-6 col-md-3 bg-body-tertiary">
+                <div class="inner bg-white  p-3 rounded-2 shadow pb-5">
+                 <h4 class="px-4 pt-5 pb-2">Platinum</h4>
+            <h2 class="border-bottom pb-4"><span>$</span>49</h2>
+
+            <ul class="list-unstyled px-4 pt-4">
+              <li class="pb-3"><span>Unlimited Connections</span></li>
+              <li class="pb-3"><span>24/7 Support</span></li>
+              <li class="pb-3"><span>Full SSL Protection</span></li>
+              <li class="pb-3"><span>Unlimited Channels</span></li>
+            </ul>
+            <div class="px-4 pb-5">
+            <button type="button" class="btn btn-info text-white p-3 rounded-2">sign up</button>
+            </div>
+                   </div>
+              </div>
+
+
+            </div>
+
+             
+
+
+
+
+
+    </section>
+
+
+        <!-- ==============price section================= -->
+         <section id="pricing" class="p-5">
+           <div class="container">
+            <div class="pt-5  text-center">
+              <h6>Happy Customers</h6>
+            </div>
+
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+
+  <div class="carousel-inner px-5 pb-4">
+    <div class="carousel-item active px-5 pb-4">
+      <div class="text-center my-photo"> 
+            <img class="rounded-circle" src="image/testimonial-1.jpg" alt="profile image" loading="lazy">
+            <div class="w-75 mx-auto  p-5 rounded-3 shadow-lg text-center">
+          <h4 class="px-4 pt-5">Marissa Mayer</h4>
+          <span class="px-4">CEO, YAHOO</span>
+          
+          <P class="px-4 pb-5 pt-4">Quo rem cumque facere modi beatae. Deleniti nisi, repellat quae aspernatur<br>
+             consequatur consequuntur, fugit asperiores delectus beatae. Quae veniam,<br>
+              quidem cupiditate quia? Ut iste deleniti.</P>
+         </div>
+        </div>
+    </div>
+    <div class="carousel-item px-5 pb-4">
+      <div class="text-center my-photo"> 
+            <img class="rounded-circle" src="image/testimonial-2.jpg" alt="profile image" loading="lazy">
+            <div class="w-75 mx-auto  p-5 rounded-3 shadow-lg text-center">
+          <h4 class="px-4 pt-5">Mark Zuckerberg</h4>
+          <span class="px-4">Founder & CEO, Facebook</span>
+          
+          <P class="px-4 pb-5 pt-4">Consectetur adipisicing elit. Perspiciatis aperiam quaerat iure veritatis fugit <br>
+            debitis, repellat aut accusantium culpa ipsum ex ipsa blanditiis recusandae, <br>
+            sit similique, eius assumenda porro pariatur.</p>
+          
+         </div>
+        </div>
+    </div>
+    
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+     <i class="fa-solid fa-arrow-left arrow text-muted" aria-hidden="true"></i>
+          <span class="visually-hidden">Previous</span>
+  
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+     <i class="fa-solid fa-arrow-right arrow-right arrow text-muted"  aria-hidden="true"></i>
+          <span class="visually-hidden">Next</span>
+  </button>
+</div>
+           </div>
+
+           
+
+        
+         </section>
+
+        <!-- ==============contact section================= -->
+         <section id="Contact">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="map col-lg-6">
+
+                <iframe src="https://www.google.com/maps/embed?pb=..."
+            width="100%"
+            height="850"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+             title="map"
+          ></iframe>
+              </div>
+
+        <div class="text-contact col-lg-6 p-5">
+
+            <h2 data-bigletter="G" class="pt-5 px-2">Get In Touch</h2>
+            <h4 class="pt-2 pb-5 px-3">Let's work together.</h4>
+
+             <div class="px-4">
+                <label for="nameInput" class="form-label">Your Name</label>
+                <input type="text" class="form-control  w-75 py-3 rounded-0" id="nameInput">
+             </div>
+
+             
+             <div class="mb-3 mt-4 px-4">
+                  <label for="exampleFormControlInput1" class="form-label">Your Email</label>
+                  <input type="email" class="form-control w-75 py-3 rounded-0" id="exampleFormControlInput1">
+            </div>
+
+             <div class="px-4">
+                <label for="numberInput" class="form-label">Phone Number</label>
+                <input type="number" class="form-control  w-75 py-3 rounded-0" id="numberInput">
+             </div>
+
+            
+              <div class="px-4">
+                <label for="messageInput" class="form-label">Your Message</label>
+                <input type="text" class="form-control  w-75 py-5 rounded-0" id="messageInput">
+             </div>
+
+
+           <div class=" my-4 px-4">
+           <button type="button" class="btn btn-info py-2 px-3 text-white">Send Message</button>
+
+           </div>
+            </div>
+          </div>
+         </section>
+
+
+
+       
+    <!-- ==============link bootstrap js================= -->
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
